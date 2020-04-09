@@ -9,21 +9,24 @@ $(document).ready(function () {
         
         var imageSelected = $('.active');
         var nextImage = imageSelected.next();
+        imageSelected.removeClass('active');
     
-    
-        if (imageSelected.hasClass('active')) {
-            imageSelected.removeClass('active');
-            nextImage.addClass('active');
+        if (imageSelected.hasClass('last')) {
+             $('.first').addClass('active');
+        } else {
+            nextImage.addClass('active')
         }
     
 });
         indietro.click(function () { 
              var imageSelected = $('.active');
              var prevImage = imageSelected.prev();
+             imageSelected.removeClass('active')
 
-        if (imageSelected.hasClass('active')) {
-        imageSelected.removeClass('active');
-        prevImage.addClass('active');
+        if (imageSelected.hasClass('first')) {
+            $('.last').addClass('active');
+        } else {
+            prevImage.addClass('active')
         }
 
 });

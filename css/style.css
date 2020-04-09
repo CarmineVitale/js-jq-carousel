@@ -41,8 +41,9 @@ img {
     justify-content: space-around;
     list-style: none;
     text-align: center;
-    background-color: white;
+    background-color: rgba(100, 100, 100, .7);
     border-radius: 20px;
+    line-height: 9px;
     
 }
 .menu-icon a {
@@ -51,7 +52,7 @@ img {
     width: 13px;
     margin: 5px;
     border-radius: 50%;
-    background-color: red;
+    background-color:rgba(0,0,0, .8);
 }
 
 .active {
