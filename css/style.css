@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main {
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    text-align: center;
+    height: 50px;
+    background-color: orange;
+}
+img {
+    width: 600px;
+    height: auto;
+    
+}
+.image-container {
+    display: flex;
+    align-items: center;
+}
+.image-container i {
+    font-size: 30px;
+    margin: 10px;
+}
+img.active {
+    display: block;
+}
+img.hidden {
+    display: none;
+}
