@@ -15,21 +15,57 @@ header {
     background-color: orange;
 }
 img {
-    width: 600px;
+    width: 800px;
     height: auto;
+    display: none;
     
 }
-.image-container {
+.slider {
     display: flex;
     align-items: center;
 }
-.image-container i {
+.slider i {
     font-size: 30px;
-    margin: 10px;
+    margin: 20px;
+    color: black;
 }
-img.active {
+
+.menu {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+.menu-icon a {
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.active {
     display: block;
 }
-img.hidden {
-    display: none;
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    
+}
+button:focus {
+    outline: 0;
+    box-shadow: none;
 }
