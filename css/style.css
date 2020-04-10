@@ -32,29 +32,33 @@ img {
 
 .menu {
     position: absolute;
-    bottom: 150px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
 }
-.menu-list {
+ul {
+    width: 80px;
+    height: 20px;
+    background: black;
+    opacity: 0.6;
+    border-radius: 10px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+  }
+  li {
     list-style: none;
-    text-align: center;
-    background-color: rgba(100, 100, 100, .7);
-    border-radius: 20px;
-    line-height: 9px;
-    
-}
-.menu-icon a {
-    display: inline-block;
-    height: 13px;
-    width: 13px;
-    margin: 5px;
+    width: 10px;
+    height: 10px;
+    background:white;
+    border: 1px solid black;
     border-radius: 50%;
-    background-color:rgba(0,0,0, .8);
-}
+    
+  }
 
+.green {
+    background-color: greenyellow;
+}
 .active {
     display: block;
 }
